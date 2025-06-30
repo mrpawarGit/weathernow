@@ -72,6 +72,7 @@ This app uses the OpenWeatherMap Current Weather Data API.
 
 # Example Endpoint:
 https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric
+
 Docs: https://openweathermap.org/current
 
 ## 🙌 Acknowledgements
