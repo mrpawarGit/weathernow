@@ -34,9 +34,8 @@ A responsive, professional-grade weather web application built with **React + Vi
 
 ## 🔧 Installation
 
-```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/weathernow.git
+git clone [https://github.com/yourusername/weathernow.git](https://github.com/mrpawarGit/weathernow.git)
 cd weathernow
 
 # 2. Install dependencies
@@ -71,7 +70,7 @@ src/
 ## 🌐 API Reference
 This app uses the OpenWeatherMap Current Weather Data API.
 
-Example Endpoint:
+# Example Endpoint:
 https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric
 Docs: https://openweathermap.org/current
 
