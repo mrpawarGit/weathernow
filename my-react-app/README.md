@@ -47,26 +47,6 @@ echo "VITE_WEATHER_API_KEY=your_api_key_here" > .env
 # 4. Start the app
 npm run dev
 
-## 🗂️ Project Structure
-
-src/
-│
-├── components/          # Navbar, Footer, etc.
-│   ├── Header.jsx
-│   └── Footer.jsx
-│
-├── pages/               # Route-based pages
-│   ├── Home.jsx
-│   ├── WeatherDetails.jsx
-│   └── NotFound.jsx
-│
-├── styles/
-│   └── theme.css        # Custom theme and transitions
-│
-├── App.jsx              # Main layout and routing
-├── main.jsx             # React root
-└── ...
-
 ## 🌐 API Reference
 This app uses the OpenWeatherMap Current Weather Data API.
 
