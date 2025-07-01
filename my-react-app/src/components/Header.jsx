@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -16,8 +17,16 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-primary">
       <div className="container-fluid px-4 d-flex justify-content-between align-items-center">
-        <Link className="navbar-brand fw-bold text-white fs-4" to="/">
-          WeatherNow
+        <Link
+          to="/"
+          className="navbar-brand d-flex align-items-center gap-2 text-white fw-bold fs-4"
+        >
+          <img
+            src={logo}
+            alt="WeatherNow Logo"
+            style={{ height: "40px", verticalAlign: "middle" }}
+          />
+          <span>WeatherNow</span>
         </Link>
 
         <div className="d-flex align-items-center gap-2">
