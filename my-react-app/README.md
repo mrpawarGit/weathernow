@@ -36,7 +36,6 @@ A responsive, professional-grade weather web application built with **React + Vi
 
 # 1. Clone the repository
 git clone [https://github.com/yourusername/weathernow.git](https://github.com/mrpawarGit/weathernow.git)
-cd weathernow
 
 # 2. Install dependencies
 npm install
