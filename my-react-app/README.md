@@ -3,10 +3,8 @@
 A responsive, professional-grade weather web application built with **React + Vite** and styled using **Bootstrap 5**. This app allows users to search any city and view real-time weather details using the **OpenWeatherMap API**, with a clean UI, smooth theme transitions, and responsive design.
 
 ---
-## Live Site
-
-[WeatherNow](https://weathernow-reactapp.netlify.app/)
---
+## Live Site - [WeatherNow](https://weathernow-reactapp.netlify.app/)
+---
 
 ## 🚀 Features
 
