@@ -4,7 +4,7 @@ A responsive, professional-grade weather web application built with **React + Vi
 
 ---
 ## Live Site - [WeatherNow](https://weathernow-reactapp.netlify.app/)
---
+---
 
 ## 🚀 Features
 
