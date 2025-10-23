@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./WeatherCard.css";
 
 const WeatherCard = ({ weather }) => {
   const [showMap, setShowMap] = useState(false);
+  const navigate = useNavigate();
 
   // Format temperature
   const formatTemp = (temp) => Math.round(temp);
@@ -36,7 +38,7 @@ const WeatherCard = ({ weather }) => {
   };
 
   // Format wind speed
-  const formatWindSpeed = (speed) => (speed * 3.6).toFixed(1); // Convert m/s to km/h
+  const formatWindSpeed = (speed) => (speed * 3.6).toFixed(1);
 
   // Get wind direction
   const getWindDirection = (deg) => {
@@ -58,6 +60,12 @@ const WeatherCard = ({ weather }) => {
 
   return (
     <div className="weather-card-container">
+      {/* Back Button */}
+      <button className="back-button" onClick={() => navigate("/")}>
+        <span className="back-icon">←</span>
+        <span>Back to Search</span>
+      </button>
+
       {/* Hero Weather Section */}
       <div
         className="weather-hero"

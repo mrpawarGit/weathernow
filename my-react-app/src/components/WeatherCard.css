@@ -455,3 +455,50 @@
     box-shadow: none;
   }
 }
+
+/* Back Button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--card-bg);
+  color: var(--card-text);
+  border: 2px solid var(--card-border);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.back-button:hover {
+  background: var(--chip-hover-bg);
+  color: white;
+  border-color: var(--chip-hover-bg);
+  transform: translateX(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.back-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover .back-icon {
+  transform: translateX(-4px);
+}
+
+/* Responsive Back Button */
+@media (max-width: 480px) {
+  .back-button {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .back-icon {
+    font-size: 1.3rem;
+  }
+}
