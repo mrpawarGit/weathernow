@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <p className="made-with">
-          Made with using React & Open-Meteo API © {currentYear}{" "}
+          Made with using React & OpenWeather API © {currentYear}{" "}
           <span className="highlight">
             <a
               target="_blank"
