@@ -1,0 +1,94 @@
+/* Footer.css */
+
+/* CSS Variables for Theme Support */
+:root {
+  --footer-bg: #f8fafc;
+  --footer-text: #64748b;
+  --footer-link: #667eea;
+  --footer-link-hover: #764ba2;
+}
+
+.dark-mode {
+  --footer-bg: #0f172a;
+  --footer-text: #94a3b8;
+  --footer-link: #818cf8;
+  --footer-link-hover: #a78bfa;
+}
+
+/* Footer Container */
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  margin-top: 4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.made-with {
+  font-size: 0.95rem;
+  color: var(--footer-text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.highlight a {
+  color: var(--footer-link);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.highlight a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--footer-link-hover);
+  transition: width 0.3s ease;
+}
+
+.highlight a:hover {
+  color: var(--footer-link-hover);
+}
+
+.highlight a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .made-with {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 1.25rem 1rem;
+  }
+
+  .made-with {
+    font-size: 0.85rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .footer {
+    background: white !important;
+    color: black !important;
+  }
+}

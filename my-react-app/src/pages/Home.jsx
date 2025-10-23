@@ -52,7 +52,7 @@ const Home = () => {
       ...recentSearches.filter(
         (c) => c.toLowerCase() !== cityName.toLowerCase()
       ),
-    ].slice(0, 5); // Keep only last 5 searches
+    ].slice(0, 5);
     setRecentSearches(updated);
     localStorage.setItem("recentSearches", JSON.stringify(updated));
   };
@@ -73,7 +73,6 @@ const Home = () => {
     navigate(`/weather/${cityName}`);
   };
 
-  // Get user's current location
   const handleCurrentLocation = () => {
     setLoadingLocation(true);
     setError("");
@@ -89,7 +88,6 @@ const Home = () => {
         const { latitude, longitude } = position.coords;
 
         try {
-          // Reverse geocoding using Open-Meteo
           const response = await fetch(
             `https://geocoding-api.open-meteo.com/v1/search?latitude=${latitude}&longitude=${longitude}&count=1&language=en&format=json`
           );
@@ -131,8 +129,8 @@ const Home = () => {
       <div className="home-content">
         {/* Hero Section */}
         <div className="hero-section">
-          <div className="weather-icon-large">⛅</div>
-          <h1 className="main-title">WeatherNow</h1>
+          {/* <div className="weather-icon-large">⛅</div> */}
+          <h1 className="main-title">⛅WeatherNow</h1>
           <p className="subtitle">
             Get real-time weather updates for any city worldwide
           </p>
@@ -192,8 +190,8 @@ const Home = () => {
                 className="btn btn-primary"
                 disabled={!city.trim()}
               >
-                <span>Search Weather</span>
-                <span className="btn-icon">→</span>
+                <span>Search</span>
+                {/* <span className="btn-icon">→</span> */}
               </button>
 
               <button
@@ -254,7 +252,7 @@ const Home = () => {
         )}
 
         {/* Popular Cities */}
-        <div className="popular-cities">
+        {/* <div className="popular-cities">
           <h3 className="section-title">Popular Cities</h3>
           <div className="city-grid">
             {popularCities.map((city, index) => (
@@ -268,7 +266,7 @@ const Home = () => {
               </button>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Features Section */}
         <div className="features-section">
