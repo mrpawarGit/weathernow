@@ -27,7 +27,7 @@ const Header = () => {
             <span className="toggle-icon">{darkMode ? "🌙" : "☀️"}</span>
           </div>
         </div>
-        <span className="toggle-label">{darkMode ? "Dark" : "Light"}</span>
+        {/* <span className="toggle-label">{darkMode ? "Dark" : "Light"}</span> */}
       </button>
     </div>
   );
