@@ -1,11 +1,12 @@
 # 🌦️ WeatherNow
 
-A responsive, professional-grade weather web application built with **React + Vite** and styled using **Bootstrap 5**. This app allows users to search any city and view real-time weather details using the **OpenWeatherMap API**, with a clean UI, smooth theme transitions, and responsive design.
+A responsive, professional-grade weather web application built with **React + Vite** and styled using **Bootstrap 5**. This app allows users to search any city and view real-time weather details using the **OpenWeatherMap API**, with a clean UI, smooth theme transitions, and a responsive design.
 
 ---
 ## Live Site - [WeatherNow](https://weathernow-reactapp.netlify.app/)
 ---
-
+<img width="1905" height="959" alt="image" src="https://github.com/user-attachments/assets/218b7f69-efec-418e-b06e-84db5b8ef955" />
+---
 ## 🚀 Features
 
 - 🔍 **City Search:** Enter any city to view current weather.
@@ -37,25 +38,35 @@ A responsive, professional-grade weather web application built with **React + Vi
 ## 🔧 Installation
 
 # 1. Clone the repository
-git clone [https://github.com/yourusername/weathernow.git](https://github.com/mrpawarGit/weathernow.git)
-cd weathernow
-
+```
+git clone https://github.com/mrpawarGit/weathernow.git
+cd my-react-app
+```
 # 2. Install dependencies
+```
 npm install
-
+```
 # 3. Create .env file with your OpenWeatherMap API key
-echo "VITE_WEATHER_API_KEY=your_api_key_here" > .env
+```
+VITE_WEATHER_API_KEY=your_api_key_here"
+```
 
 # 4. Start the app
+```
 npm run dev
+```
 
 ## 🗂️ Project Structure
-
+```
 src/
 │
-├── components/          # Navbar, Footer, etc.
-│   ├── Header.jsx
+├── components/          # Theme Toggle, Footer, etc.
+│   ├── Footer.css
 │   └── Footer.jsx
+│   └── Header.css
+│   └── Header.jsx
+│   └── WeatherCard.css
+│   └── WeatherCard.jsx
 │
 ├── pages/               # Route-based pages
 │   ├── Home.jsx
@@ -68,14 +79,9 @@ src/
 ├── App.jsx              # Main layout and routing
 ├── main.jsx             # React root
 └── ...
-
+```
 ## 🌐 API Reference
-This app uses the OpenWeatherMap Current Weather Data API.
-
-# Example Endpoint:
-https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric
-
-Docs: https://openweathermap.org/current
+- This app uses the [**OpenWeatherMap**](https://openweathermap.org/api) Current Weather Data API.
 
 ## 🙌 Acknowledgements
 - React
